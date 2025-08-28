@@ -1,0 +1,22 @@
+[project]
+name = "rasheed-student"
+version = "0.1.0"
+description = "Rasheed University - Student App"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "zaid" }]
+dependencies = [
+  "flet",
+  "qrcode",
+  "pypng"
+]
+
+[tool.flet]
+org = "com.rasheed.uni"
+product = "Rasheed Student"
+company = "Rasheed University"
+permissions = ["camera"]
+
+[tool.flet.app]
+path = "."
+module = "student_app"
