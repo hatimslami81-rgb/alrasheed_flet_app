@@ -30,7 +30,7 @@ jobs:
           pip install flet flet-cli
 
       - name: Build APK (Flet)
-        run: flet build apk --verbose --target "student.app.py"
+        run: flet build apk --verbose 
 
 
         # لو ملفك الرئيسي ليس main.py استعمل:
@@ -41,6 +41,7 @@ jobs:
         with:
           name: app-release
           path: "**/app-release.apk"
+
 
 
 
